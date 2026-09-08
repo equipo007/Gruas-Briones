@@ -3,59 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GRUAS BRIONES | Servicio 24/7</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#080a0c">
 
     <meta name="description"
-        content="Grúas Briones. Servicio de grúas y auxilio vial 24/7 en Miguel Hidalgo, Ciudad de México. Atención rápida, segura y profesional.">
+        content="Grúas Briones - Servicio de grúas y asistencia vial 24/7.">
 
-    <meta name="keywords"
-        content="grúas, grúas CDMX, grúas Miguel Hidalgo, auxilio vial, grúas 24 horas, Grúas Briones">
+    <title>Grúas Briones | Servicio 24/7</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- FONT AWESOME -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
 
-    <header class="header">
+        <div class="header-container">
 
-        <div class="container nav">
+            <a href="#inicio" class="logo">
 
-            <a href="#inicio" class="brand">
+                <img src="images/Logo.png"
+                    alt="Grúas Briones">
 
-                <img src="Logo.png" alt="Grúas Briones">
-
-                <div class="brand-text">
-
-                    <strong>
-                        GRUAS <span>BRIONES</span>
-                    </strong>
-
-                    <small>
-                        SERVICIO 24/7
-                    </small>
-
+                <div class="logo-name">
+                    <strong>GRÚAS</strong>
+                    <span>BRIONES</span>
+                    <small>SERVICIO 24/7</small>
                 </div>
 
             </a>
 
 
-            <button class="menu-btn" id="menuBtn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-
-            <nav id="navMenu">
+            <nav class="nav" id="navMenu">
 
                 <a href="#inicio" class="active">
                     Inicio
@@ -65,12 +64,16 @@
                     Servicios
                 </a>
 
-                <a href="#nosotros">
-                    Nosotros
+                <a href="#como-funciona">
+                    ¿Cómo funciona?
                 </a>
 
-                <a href="#cobertura">
-                    Cobertura
+                <a href="#galeria">
+                    Trabajos
+                </a>
+
+                <a href="#ubicacion">
+                    Ubicación
                 </a>
 
                 <a href="#contacto">
@@ -79,76 +82,94 @@
 
             </nav>
 
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Abrir menú"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
         </div>
 
     </header>
 
 
-    <!-- ================= CINTA DE SEGURIDAD ================= -->
-
-    <div class="safety-stripe"></div>
-
-
-    <!-- ================= CONTENIDO ================= -->
 
     <main>
 
 
-        <!-- ================= HERO ================= -->
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
 
         <section class="hero" id="inicio">
 
             <div class="hero-background"></div>
 
-
-            <div class="container hero-content">
-
-
-                <!-- TEXTO -->
-
-                <div class="hero-text">
+            <div class="hero-overlay"></div>
 
 
-                    <div class="badge">
+            <div class="hero-container">
 
-                        <i class="fa-solid fa-truck"></i>
 
-                        SERVICIO 24/7
+                <div class="hero-content">
+
+
+                    <div class="hero-badge">
+
+                        <span></span>
+
+                        SERVICIO DE GRÚA 24/7
 
                     </div>
+
+
+                    <p class="hero-kicker">
+                        ASISTENCIA VIAL PROFESIONAL
+                    </p>
 
 
                     <h1>
 
                         ¿NECESITAS
-                        <br>
-
-                        UNA <span>GRÚA?</span>
+                        <strong>UNA GRÚA?</strong>
 
                     </h1>
 
 
-                    <div class="red-line"></div>
+                    <p class="hero-description">
 
+                        Llegamos rápido.
+                        <br>
 
-                    <p>
-
-                        Servicio de grúas y auxilio vial
-
-                        <strong>
-                            rápido, seguro y confiable.
-                        </strong>
+                        Te ayudamos cuando más lo necesitas.
 
                     </p>
 
 
-                    <div class="hero-buttons">
+                    <div class="hero-actions">
 
 
-                        <!-- LLAMAR -->
+                        <a href="#"
+                            class="btn btn-primary js-whatsapp">
 
-                        <a href="tel:+520000000000"
-                            class="btn call-btn">
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            <span>
+                                PEDIR GRÚA
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right arrow"></i>
+
+                        </a>
+
+
+                        <a href="#"
+                            class="btn btn-secondary js-phone">
 
                             <i class="fa-solid fa-phone"></i>
 
@@ -159,162 +180,64 @@
                         </a>
 
 
-                        <!-- WHATSAPP -->
-
-                        <a href="https://wa.me/520000000000"
-                            target="_blank"
-                            rel="noopener"
-                            class="btn whatsapp-btn">
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            <span>
-                                WHATSAPP
-                            </span>
-
-                        </a>
-
                     </div>
 
 
-                    <div class="available">
+                    <div class="hero-trust">
 
-                        <span class="green-dot"></span>
+                        <span>
+                            <i class="fa-solid fa-bolt"></i>
+                            Rápido
+                        </span>
 
-                        Estamos disponibles las
+                        <span>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Seguro
+                        </span>
 
-                        <strong>
-                            24 horas
-                        </strong>
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Confiable
+                        </span>
 
                     </div>
 
                 </div>
 
 
-                <!-- FOTO -->
 
-                <div class="hero-image">
+                <div class="hero-truck">
 
-                    <img src="grua-hero.jpg"
-                        alt="Servicio de Grúas Briones">
+                    <div class="truck-glow"></div>
 
-                    <div class="image-overlay"></div>
+                    <img
+                        src="images/grua.png"
+                        alt="Grúa Briones">
+
+                    <div class="truck-brand">
+
+                        <strong>
+                            GRÚAS
+                        </strong>
+
+                        <span>
+                            BRIONES
+                        </span>
+
+                    </div>
 
                 </div>
 
             </div>
 
 
+            <div class="hero-scroll">
 
-            <!-- ================= BENEFICIOS ================= -->
+                <span>
+                    DESCUBRE NUESTROS SERVICIOS
+                </span>
 
-            <div class="container benefits">
-
-
-                <div class="benefit">
-
-                    <div class="benefit-icon">
-
-                        <i class="fa-regular fa-clock"></i>
-
-                    </div>
-
-                    <h3>
-                        SERVICIO 24/7
-                    </h3>
-
-                    <p>
-                        Atención las 24 horas,
-                        los 7 días de la semana.
-                    </p>
-
-                </div>
-
-
-
-                <div class="benefit">
-
-                    <div class="benefit-icon">
-
-                        <i class="fa-solid fa-bolt"></i>
-
-                    </div>
-
-                    <h3>
-                        RÁPIDO
-                    </h3>
-
-                    <p>
-                        Llegamos rápido cuando
-                        más lo necesitas.
-                    </p>
-
-                </div>
-
-
-
-                <div class="benefit">
-
-                    <div class="benefit-icon">
-
-                        <i class="fa-solid fa-shield-halved"></i>
-
-                    </div>
-
-                    <h3>
-                        SEGURO
-                    </h3>
-
-                    <p>
-                        Traslado seguro de
-                        tu vehículo.
-                    </p>
-
-                </div>
-
-
-
-                <div class="benefit">
-
-                    <div class="benefit-icon">
-
-                        <i class="fa-solid fa-user-gear"></i>
-
-                    </div>
-
-                    <h3>
-                        PROFESIONAL
-                    </h3>
-
-                    <p>
-                        Personal capacitado
-                        y con experiencia.
-                    </p>
-
-                </div>
-
-
-
-                <div class="benefit">
-
-                    <div class="benefit-icon">
-
-                        <i class="fa-solid fa-tag"></i>
-
-                    </div>
-
-                    <h3>
-                        PRECIOS JUSTOS
-                    </h3>
-
-                    <p>
-                        Cotizaciones claras
-                        y sin cargos ocultos.
-                    </p>
-
-                </div>
-
+                <i class="fa-solid fa-chevron-down"></i>
 
             </div>
 
@@ -322,26 +245,37 @@
 
 
 
-        <!-- ================= SERVICIOS ================= -->
+        <!-- =====================================================
+             SERVICIOS
+        ====================================================== -->
 
-        <section class="section" id="servicios">
+        <section class="section services" id="servicios">
 
             <div class="container">
 
 
-                <div class="section-title">
+                <div class="section-heading">
 
-                    <span>
-                        SERVICIOS
-                    </span>
+                    <div class="section-label">
+
+                        <span></span>
+
+                        NUESTROS SERVICIOS
+
+                    </div>
+
 
                     <h2>
-                        Estamos para ayudarte
+
+                        LO QUE NECESITAS,
+                        <strong>CUANDO LO NECESITAS.</strong>
+
                     </h2>
 
+
                     <p>
-                        Atención profesional para diferentes
-                        situaciones en carretera.
+                        Soluciones rápidas para cualquier situación
+                        con tu vehículo.
                     </p>
 
                 </div>
@@ -351,142 +285,259 @@
                 <div class="services-grid">
 
 
-                    <!-- GRÚA -->
-
                     <article class="service-card">
 
                         <div class="service-icon">
-
                             <i class="fa-solid fa-truck-pickup"></i>
+                        </div>
 
+                        <div class="service-number">
+                            01
                         </div>
 
                         <h3>
-                            Servicio de grúa
+                            SERVICIO<br>
+                            DE GRÚA
                         </h3>
 
                         <p>
                             Traslado seguro de vehículos
-                            a cualquier destino.
+                            ligeros y pesados.
                         </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
 
                     </article>
 
 
 
-                    <!-- AUXILIO -->
-
                     <article class="service-card">
 
                         <div class="service-icon">
+                            <i class="fa-solid fa-road"></i>
+                        </div>
 
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-
+                        <div class="service-number">
+                            02
                         </div>
 
                         <h3>
-                            Auxilio vial
+                            AUXILIO<br>
+                            VIAL
                         </h3>
 
                         <p>
-                            Asistencia para emergencias
-                            en carretera.
+                            Asistencia en carretera
+                            cuando tienes un imprevisto.
                         </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
 
                     </article>
 
 
 
-                    <!-- BATERÍA -->
-
                     <article class="service-card">
 
                         <div class="service-icon">
-
-                            <i class="fa-solid fa-car-battery"></i>
-
-                        </div>
-
-                        <h3>
-                            Paso de corriente
-                        </h3>
-
-                        <p>
-                            Ayuda cuando tu vehículo
-                            se queda sin batería.
-                        </p>
-
-                    </article>
-
-
-
-                    <!-- LLANTA -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
-                            <i class="fa-solid fa-tire"></i>
-
-                        </div>
-
-                        <h3>
-                            Cambio de llanta
-                        </h3>
-
-                        <p>
-                            Asistencia cuando tienes
-                            una llanta ponchada.
-                        </p>
-
-                    </article>
-
-
-
-                    <!-- COMBUSTIBLE -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
-                            <i class="fa-solid fa-gas-pump"></i>
-
-                        </div>
-
-                        <h3>
-                            Combustible
-                        </h3>
-
-                        <p>
-                            Te ayudamos cuando te
-                            quedas sin combustible.
-                        </p>
-
-                    </article>
-
-
-
-                    <!-- VEHÍCULO -->
-
-                    <article class="service-card">
-
-                        <div class="service-icon">
-
                             <i class="fa-solid fa-car"></i>
+                        </div>
 
+                        <div class="service-number">
+                            03
                         </div>
 
                         <h3>
-                            Traslado de vehículos
+                            TRASLADO<br>
+                            DE AUTOS
                         </h3>
 
                         <p>
-                            Traslado de vehículos
-                            particulares y comerciales.
+                            Transportamos tu automóvil
+                            de forma segura.
                         </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
 
                     </article>
 
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+
+                        <div class="service-number">
+                            04
+                        </div>
+
+                        <h3>
+                            PLATAFORMA<br>
+                            VEHICULAR
+                        </h3>
+
+                        <p>
+                            Transporte estable y seguro
+                            para diferentes vehículos.
+                        </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-car-battery"></i>
+                        </div>
+
+                        <div class="service-number">
+                            05
+                        </div>
+
+                        <h3>
+                            PASO DE<br>
+                            CORRIENTE
+                        </h3>
+
+                        <p>
+                            Te ayudamos cuando tu batería
+                            se queda sin energía.
+                        </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-gas-pump"></i>
+                        </div>
+
+                        <div class="service-number">
+                            06
+                        </div>
+
+                        <h3>
+                            SUMINISTRO<br>
+                            DE GASOLINA
+                        </h3>
+
+                        <p>
+                            Te llevamos combustible
+                            para que continúes tu camino.
+                        </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+
+                        <div class="service-number">
+                            07
+                        </div>
+
+                        <h3>
+                            APERTURA<br>
+                            DE VEHÍCULOS
+                        </h3>
+
+                        <p>
+                            Asistencia para recuperar
+                            el acceso a tu vehículo.
+                        </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-car-burst"></i>
+                        </div>
+
+                        <div class="service-number">
+                            08
+                        </div>
+
+                        <h3>
+                            RESCATE<br>
+                            VEHICULAR
+                        </h3>
+
+                        <p>
+                            Apoyo para vehículos
+                            que necesitan ser recuperados.
+                        </p>
+
+                        <a href="#" class="service-link js-whatsapp">
+
+                            SOLICITAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
 
                 </div>
 
@@ -496,105 +547,92 @@
 
 
 
-        <!-- ================= NOSOTROS ================= -->
+        <!-- =====================================================
+             BENEFICIOS
+        ====================================================== -->
 
-        <section class="about section" id="nosotros">
+        <section class="benefits">
 
-            <div class="container about-grid">
+            <div class="container">
 
-
-                <div class="about-photo">
-
-                    <img src="grua-hero.jpg"
-                        alt="Grúas Briones">
-
-                </div>
+                <div class="benefits-grid">
 
 
+                    <div class="benefit">
 
-                <div class="about-content">
-
-                    <span class="section-label">
-
-                        SOBRE NOSOTROS
-
-                    </span>
-
-
-                    <h2>
-
-                        Tu vehículo en buenas manos.
-
-                    </h2>
-
-
-                    <p>
-
-                        En Grúas Briones nos enfocamos en
-                        brindar un servicio rápido, seguro
-                        y profesional.
-
-                    </p>
-
-
-                    <p>
-
-                        Estamos disponibles para ayudarte
-                        cuando más lo necesitas.
-
-                    </p>
-
-
-
-                    <div class="check-list">
-
-
-                        <div>
-
-                            <span>
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-
-                            Servicio 24/7
-
+                        <div class="benefit-icon">
+                            <i class="fa-regular fa-clock"></i>
                         </div>
 
-
-
                         <div>
+                            <strong>
+                                24/7
+                            </strong>
 
                             <span>
-                                <i class="fa-solid fa-check"></i>
+                                Siempre disponibles
                             </span>
-
-                            Atención rápida
-
                         </div>
 
+                    </div>
 
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
 
                         <div>
+                            <strong>
+                                RÁPIDO
+                            </strong>
 
                             <span>
-                                <i class="fa-solid fa-check"></i>
+                                Atención oportuna
                             </span>
-
-                            Traslado seguro
-
                         </div>
 
+                    </div>
 
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
 
                         <div>
+                            <strong>
+                                SEGURO
+                            </strong>
 
                             <span>
-                                <i class="fa-solid fa-check"></i>
+                                Tu vehículo protegido
                             </span>
-
-                            Personal capacitado
-
                         </div>
 
+                    </div>
+
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                CERCA DE TI
+                            </strong>
+
+                            <span>
+                                Llegamos donde estés
+                            </span>
+                        </div>
 
                     </div>
 
@@ -606,145 +644,122 @@
 
 
 
-        <!-- ================= COBERTURA ================= -->
+        <!-- =====================================================
+             COMO FUNCIONA
+        ====================================================== -->
 
-        <section class="section" id="cobertura">
+        <section class="section how" id="como-funciona">
 
             <div class="container">
 
 
-                <div class="section-title">
+                <div class="section-heading">
 
-                    <span>
-                        COBERTURA
-                    </span>
+                    <div class="section-label">
+
+                        <span></span>
+
+                        ASÍ DE FÁCIL
+
+                    </div>
 
                     <h2>
-                        Estamos cerca de ti
+                        EN <strong>3 SIMPLES PASOS</strong>
                     </h2>
 
                     <p>
-                        Estamos ubicados en Miguel Hidalgo,
-                        Ciudad de México, y atendemos zonas cercanas.
+                        Solicitar ayuda nunca había sido tan sencillo.
                     </p>
 
                 </div>
 
 
 
-                <div class="coverage">
+                <div class="steps">
 
 
-                    <!-- INFORMACIÓN -->
+                    <div class="step">
 
-                    <div class="coverage-info">
+                        <div class="step-number">
+                            01
+                        </div>
 
+                        <div class="step-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
 
                         <h3>
-
-                            <i class="fa-solid fa-location-dot"></i>
-
-                            Nuestra ubicación
-
+                            PIDE TU GRÚA
                         </h3>
 
-
                         <p>
-
-                            <strong>
-                                Grúas Briones
-                            </strong>
-
+                            Llámanos o solicita el servicio
+                            por WhatsApp.
                         </p>
-
-
-                        <p>
-
-                            Coronel Amado Camacho 98,
-                            Colonia América,
-                            Alcaldía Miguel Hidalgo,
-                            C.P. 11820,
-                            Ciudad de México, CDMX.
-
-                        </p>
-
-
-
-                        <ul>
-
-                            <li>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Miguel Hidalgo
-
-                            </li>
-
-
-                            <li>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Ciudad de México
-
-                            </li>
-
-
-                            <li>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Zonas cercanas
-
-                            </li>
-
-
-                            <li>
-
-                                <i class="fa-solid fa-check"></i>
-
-                                Servicio 24/7
-
-                            </li>
-
-                        </ul>
-
-
-
-                        <!-- CÓMO LLEGAR -->
-
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=19.405104,-99.202609"
-                            target="_blank"
-                            rel="noopener"
-                            class="btn call-btn">
-
-                            <i class="fa-solid fa-diamond-turn-right"></i>
-
-                            Cómo llegar
-
-                        </a>
-
 
                     </div>
 
 
 
-                    <!-- GOOGLE MAPS -->
+                    <div class="step-arrow">
 
-                    <div class="map">
-
-                        <iframe
-                            src="https://www.google.com/maps?q=19.405104,-99.202609&z=17&output=embed"
-                            width="100%"
-                            height="450"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <i class="fa-solid fa-arrow-right"></i>
 
                     </div>
 
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <h3>
+                            COMPARTE TU UBICACIÓN
+                        </h3>
+
+                        <p>
+                            Dinos dónde estás y qué
+                            necesitas.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="step-arrow">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-truck-moving"></i>
+                        </div>
+
+                        <h3>
+                            LLEGAMOS
+                        </h3>
+
+                        <p>
+                            Nos dirigimos hacia tu
+                            ubicación.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -754,61 +769,469 @@
 
 
 
-        <!-- ================= CONTACTO ================= -->
+        <!-- =====================================================
+             NOSOTROS
+        ====================================================== -->
 
-        <section class="contact section" id="contacto">
+        <section class="about" id="nosotros">
 
-            <div class="container contact-grid">
+            <div class="about-image">
+
+                <img
+                    src="images/grua.png"
+                    alt="Grúas Briones">
+
+            </div>
 
 
-                <div>
+            <div class="about-content">
 
-                    <span class="section-label">
-                        CONTACTO
+                <div class="section-label">
+
+                    <span></span>
+
+                    GRÚAS BRIONES
+
+                </div>
+
+
+                <h2>
+
+                    TU VEHÍCULO.
+                    <strong>NUESTRA PRIORIDAD.</strong>
+
+                </h2>
+
+
+                <p>
+
+                    Ofrecemos servicio de grúas y asistencia vial
+                    pensado para ayudarte de manera rápida,
+                    segura y profesional.
+
+                </p>
+
+
+                <div class="about-list">
+
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Servicio profesional
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Atención 24/7
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Traslado seguro
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Atención personalizada
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <a href="#contacto"
+                    class="about-button">
+
+                    CONÓCENOS
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GALERÍA
+        ====================================================== -->
+
+        <section class="section gallery" id="galeria">
+
+            <div class="container">
+
+
+                <div class="gallery-header">
+
+                    <div>
+
+                        <div class="section-label">
+
+                            <span></span>
+
+                            TRABAJOS REALES
+
+                        </div>
+
+
+                        <h2>
+
+                            NUESTRA
+                            <strong>GALERÍA</strong>
+
+                        </h2>
+
+                    </div>
+
+
+                    <span class="gallery-count">
+                        01 / 05
                     </span>
-
-
-                    <h2>
-                        ¿Necesitas una grúa?
-                    </h2>
-
-
-                    <p>
-
-                        Llámanos o escríbenos por WhatsApp.
-                        Estamos disponibles las 24 horas.
-
-                    </p>
-
-
-                    <p>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Coronel Amado Camacho 98,
-                        Col. América, Miguel Hidalgo,
-                        Ciudad de México, CDMX.
-
-                    </p>
 
                 </div>
 
 
 
-                <div class="contact-buttons">
+                <div class="gallery-grid">
 
 
-                    <!-- TELÉFONO -->
+                    <button
+                        class="gallery-item gallery-large"
+                        data-image="images/g1.jpeg">
 
-                    <a href="tel:+520000000000"
-                        class="contact-button">
+                        <img
+                            src="images/g1.jpeg"
+                            alt="Trabajo realizado 1"
+                            loading="lazy">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                01
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item"
+                        data-image="images/g2.jpeg">
+
+                        <img
+                            src="images/g2.jpeg"
+                            alt="Trabajo realizado 2"
+                            loading="lazy">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                02
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item"
+                        data-image="images/g3.jpeg">
+
+                        <img
+                            src="images/g3.jpeg"
+                            alt="Trabajo realizado 3"
+                            loading="lazy">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                03
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item"
+                        data-image="images/g4.jpeg">
+
+                        <img
+                            src="images/g4.jpeg"
+                            alt="Trabajo realizado 4"
+                            loading="lazy">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                04
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        class="gallery-item"
+                        data-image="images/g5.jpeg">
+
+                        <img
+                            src="images/g5.jpeg"
+                            alt="Trabajo realizado 5"
+                            loading="lazy">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                05
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             UBICACIÓN
+        ====================================================== -->
+
+        <section class="location" id="ubicacion">
+
+            <div class="location-info">
+
+                <div class="section-label">
+
+                    <span></span>
+
+                    ESTAMOS CERCA DE TI
+
+                </div>
+
+
+                <h2>
+
+                    ENCUÉNTRANOS
+                    <strong>FÁCILMENTE.</strong>
+
+                </h2>
+
+
+                <p>
+
+                    Consulta nuestra ubicación y abre
+                    la ruta directamente en Google Maps.
+
+                </p>
+
+
+                <div class="location-data">
+
+                    <div class="location-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Grúas Briones
+                        </strong>
 
                         <span>
+                            Ciudad de México
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://maps.app.goo.gl/hHuNZHdg3yee2NDJA"
+                    target="_blank"
+                    rel="noopener"
+                    class="map-button">
+
+                    <i class="fa-solid fa-location-arrow"></i>
+
+                    ABRIR EN GOOGLE MAPS
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=19.405104,-99.202609&z=15&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    title="Ubicación de Grúas Briones">
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="cta">
+
+            <div class="cta-content">
+
+                <div class="cta-label">
+
+                    <span></span>
+
+                    SERVICIO 24/7
+
+                </div>
+
+
+                <h2>
+
+                    ¿TE QUEDASTE
+                    <strong>VARADO?</strong>
+
+                </h2>
+
+
+                <p>
+                    No te preocupes. Estamos listos para ayudarte.
+                </p>
+
+
+                <div class="cta-buttons">
+
+
+                    <a href="#"
+                        class="btn btn-primary js-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        PEDIR GRÚA
+
+                    </a>
+
+
+                    <a href="#"
+                        class="btn btn-secondary js-phone">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        LLAMAR AHORA
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACTO
+        ====================================================== -->
+
+        <section class="section contact" id="contacto">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-label">
+
+                        <span></span>
+
+                        CONTACTO
+
+                    </div>
+
+
+                    <h2>
+
+                        ESTAMOS
+                        <strong>PARA SERVIRTE.</strong>
+
+                    </h2>
+
+                </div>
+
+
+
+                <div class="contact-grid">
+
+
+                    <a href="#"
+                        class="contact-card js-phone">
+
+                        <div class="contact-icon">
 
                             <i class="fa-solid fa-phone"></i>
 
-                        </span>
-
+                        </div>
 
                         <div>
 
@@ -817,28 +1240,25 @@
                             </small>
 
                             <strong>
-                                Teléfono pendiente
+                                Llamar ahora
                             </strong>
 
                         </div>
+
+                        <i class="fa-solid fa-arrow-right"></i>
 
                     </a>
 
 
 
-                    <!-- WHATSAPP -->
+                    <a href="#"
+                        class="contact-card js-whatsapp">
 
-                    <a href="https://wa.me/520000000000"
-                        target="_blank"
-                        rel="noopener"
-                        class="contact-button">
-
-                        <span>
+                        <div class="contact-icon">
 
                             <i class="fa-brands fa-whatsapp"></i>
 
-                        </span>
-
+                        </div>
 
                         <div>
 
@@ -847,28 +1267,28 @@
                             </small>
 
                             <strong>
-                                Enviar mensaje
+                                Solicitar servicio
                             </strong>
 
                         </div>
+
+                        <i class="fa-solid fa-arrow-right"></i>
 
                     </a>
 
 
 
-                    <!-- UBICACIÓN -->
-
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=19.405104,-99.202609"
+                    <a
+                        href="https://maps.app.goo.gl/hHuNZHdg3yee2NDJA"
                         target="_blank"
                         rel="noopener"
-                        class="contact-button">
+                        class="contact-card">
 
-                        <span>
+                        <div class="contact-icon">
 
                             <i class="fa-solid fa-location-dot"></i>
 
-                        </span>
-
+                        </div>
 
                         <div>
 
@@ -877,13 +1297,14 @@
                             </small>
 
                             <strong>
-                                Miguel Hidalgo, CDMX
+                                Google Maps
                             </strong>
 
                         </div>
 
-                    </a>
+                        <i class="fa-solid fa-arrow-right"></i>
 
+                    </a>
 
                 </div>
 
@@ -891,58 +1312,98 @@
 
         </section>
 
-
     </main>
 
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-    <footer>
+    <footer class="footer">
 
-        <div class="container footer-content">
+        <div class="container">
 
 
-            <div>
+            <div class="footer-main">
 
-                <strong>
 
-                    GRUAS <span>BRIONES</span>
+                <a href="#inicio"
+                    class="footer-logo">
 
-                </strong>
+                    <img
+                        src="images/Logo.png"
+                        alt="Grúas Briones">
+
+                    <div>
+
+                        <strong>
+                            GRÚAS
+                        </strong>
+
+                        <span>
+                            BRIONES
+                        </span>
+
+                    </div>
+
+                </a>
 
 
                 <p>
-                    Servicio de grúas 24/7
-                </p>
 
-
-                <p>
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    Coronel Amado Camacho 98,
-                    América, Miguel Hidalgo,
-                    CDMX.
+                    Servicio de grúas y asistencia vial.
+                    <br>
+                    Cuando más nos necesitas.
 
                 </p>
+
+
+                <div class="footer-social">
+
+
+                    <a href="#"
+                        class="js-whatsapp"
+                        aria-label="WhatsApp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                        class="js-phone"
+                        aria-label="Teléfono">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </a>
+
+                </div>
 
             </div>
 
 
 
-            <div>
+            <div class="footer-bottom">
 
-                <p>
-                    © 2026 GRUAS BRIONES
-                </p>
+                <span>
 
-                <p>
-                    Todos los derechos reservados.
-                </p>
+                    © <span id="year"></span>
+                    Grúas Briones
+
+                </span>
+
+
+                <a href="#inicio">
+
+                    VOLVER ARRIBA
+
+                    <i class="fa-solid fa-arrow-up"></i>
+
+                </a>
 
             </div>
-
 
         </div>
 
@@ -950,40 +1411,237 @@
 
 
 
-    <!-- ================= BOTONES CELULAR ================= -->
+    <!-- =====================================================
+         BOTONES FLOTANTES
+    ====================================================== -->
 
-    <div class="mobile-actions">
-
-
-        <a href="tel:+520000000000">
-
-            <i class="fa-solid fa-phone"></i>
-
-            Llamar
-
-        </a>
+    <div class="floating-actions">
 
 
-
-        <a href="https://wa.me/520000000000"
-            target="_blank"
-            rel="noopener">
+        <a href="#"
+            class="floating-btn floating-whatsapp js-whatsapp"
+            aria-label="WhatsApp">
 
             <i class="fa-brands fa-whatsapp"></i>
 
-            WhatsApp
-
         </a>
 
+
+        <a href="#"
+            class="floating-btn floating-phone js-phone"
+            aria-label="Llamar">
+
+            <i class="fa-solid fa-phone"></i>
+
+        </a>
 
     </div>
 
 
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- =====================================================
+         LIGHTBOX GALERÍA
+    ====================================================== -->
+
+    <div class="lightbox"
+        id="lightbox"
+        aria-hidden="true">
+
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Cerrar">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Imagen ampliada">
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
+
+    <script>
+
+        /* Año automático */
+
+        const year = document.getElementById("year");
+
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+
+
+        /* Header al hacer scroll */
+
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 40) {
+
+                header.classList.add("scrolled");
+
+            } else {
+
+                header.classList.remove("scrolled");
+
+            }
+
+        });
+
+
+        /* Menú móvil */
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navMenu = document.getElementById("navMenu");
+
+        if (menuBtn && navMenu) {
+
+            menuBtn.addEventListener("click", () => {
+
+                navMenu.classList.toggle("open");
+
+                const opened = navMenu.classList.contains("open");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    opened
+                );
+
+                menuBtn.innerHTML = opened
+                    ? '<i class="fa-solid fa-xmark"></i>'
+                    : '<i class="fa-solid fa-bars"></i>';
+
+            });
+
+
+            navMenu.querySelectorAll("a").forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    navMenu.classList.remove("open");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.innerHTML =
+                        '<i class="fa-solid fa-bars"></i>';
+
+                });
+
+            });
+
+        }
+
+
+        /* Lightbox */
+
+        const lightbox =
+            document.getElementById("lightbox");
+
+        const lightboxImage =
+            document.getElementById("lightboxImage");
+
+        const lightboxClose =
+            document.getElementById("lightboxClose");
+
+
+        document.querySelectorAll(".gallery-item")
+            .forEach(item => {
+
+                item.addEventListener("click", () => {
+
+                    const image =
+                        item.getAttribute("data-image");
+
+                    if (!image) return;
+
+                    lightboxImage.src = image;
+
+                    lightbox.classList.add("active");
+
+                    lightbox.setAttribute(
+                        "aria-hidden",
+                        "false"
+                    );
+
+                    document.body.style.overflow = "hidden";
+
+                });
+
+            });
+
+
+        function closeLightbox() {
+
+            lightbox.classList.remove("active");
+
+            lightbox.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            document.body.style.overflow = "";
+
+        }
+
+
+        if (lightboxClose) {
+
+            lightboxClose.addEventListener(
+                "click",
+                closeLightbox
+            );
+
+        }
+
+
+        if (lightbox) {
+
+            lightbox.addEventListener(
+                "click",
+                event => {
+
+                    if (event.target === lightbox) {
+
+                        closeLightbox();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        document.addEventListener(
+            "keydown",
+            event => {
+
+                if (event.key === "Escape") {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+    </script>
 
 </body>
 
